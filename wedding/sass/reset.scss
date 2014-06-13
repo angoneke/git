@@ -1,0 +1,96 @@
+/* apply a natural box layout model to all elements */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+a {
+//  @include transition-with-delay(.25s,all, 0s, ease-in);
+//  @include transition-property (background-color,color, opacity);
+  &:hover {
+//    @include transition-with-delay(.25s,all, 0s, ease-out);
+//    @include transition-property (background-color,color,opacity);
+    cursor: pointer;
+  }
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*Removes button padding in FF*/
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+
+html {
+  font-size : 81.25%;
+  position: relative;
+  height: 100%;
+}
+
+body {
+  color            : #646464;
+  min-height       : 100%;
+  text-rendering   : optimizeLegibility;
+}
+
+a, a:active, a:visited {
+  color           : #333;
+  cursor          : pointer;
+  outline         : none;
+  text-decoration : none;
+}
+
+h1,
+h2,
+h3,
+h4, {
+//  color       : $text-color;
+//  font-family: $sans-serif;
+  font-weight : normal;
+}
+
+p {
+
+}
+ol, ul {
+  list-style: none;
+}
+
+.clear {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+}
+

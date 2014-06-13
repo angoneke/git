@@ -1,0 +1,203 @@
+@import "font";
+$title-font: 'PT Sans', sans-serif;
+$body-font: 'Montserrat', sans-serif;
+$hand-font: 'Pacifico', cursive;
+
+$color : #FF6699;
+$color1 : #93433C;
+$color2 : #CD766D;
+$color3 : #FFECDB;
+$color4 : #FCD0CD;
+$color5 : #F2B3A2;
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+html{
+  font-family: $body-font;
+  background: $color3;
+  font-size: 62.5%;
+}
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  font-size: 1.6rem;
+}
+
+h2{
+  font-size : 6rem;
+  font-family: $title-font;
+}
+h3{
+  font-size: 3rem;
+  margin: 2rem 0 0;
+  line-height: 4rem;
+  border-bottom: 1px dashed #93433C;
+  span {
+    font-size: 2.3rem;
+    font-style: italic;
+  }
+}
+p{
+  line-height: 2.5rem;
+  margin-top: 1.5rem;
+  &.alert{
+    font-style: italic;
+  }
+  .accommodations-details &{
+    margin-top: 0;
+  }
+}
+a,
+a:visited{
+  color: $color;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.title-font{
+  font-family: $title-font;
+}
+.body-font{
+  font-family: $body-font;
+}
+.hand-font{
+  font-family: $hand-font;
+}
+
+.header{
+  font-family: $title-font;
+  margin: 0px auto;
+  padding: 0px;
+  width: 100%;
+  height: 7rem;
+  background: white;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  border-bottom: 2px solid black;
+
+
+  ul {
+    width: 960px;
+    margin: 0 auto;
+    @include clearfix;
+
+    li {
+      float: left;
+      line-height: 6rem;
+      margin: 0 1.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.6rem;
+
+      &.header-title{
+        line-height: 3rem;
+        margin: 0.6rem 1.5rem;
+        padding: 0.7rem 2rem;
+        border: 2px dashed $color1;
+        font-size: 2rem;
+      }
+      a {
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+section{
+  padding: 9rem 2rem 3rem;
+  min-height: 100%;
+  width: 100%;
+  @include clearfix;
+
+  ul {
+    padding-left: 5rem;
+    margin: 0 0 1.5rem;
+    li {
+      list-style: initial;
+    }
+  }
+
+  &#main{
+    text-align: center;
+    background-color:#F0F0F0;
+
+    h2{
+      font-family: $hand-font;
+      color: $color;
+      font-size: 4rem;
+    }
+    p{
+      margin: 0 auto;
+      width: 65%;
+    }
+    img{
+      width: 100%;
+    }
+    .image {
+      width: 40%;
+      margin: 0 5%;
+      float: left;
+
+    }
+  }
+  &#travel{
+    background-color:#FFFFFF;
+    .img {
+      width: 35%;
+      margin-left: 2rem;
+      float: right;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &#accommodations{
+    background-color:#F0F0F0;
+  }
+  &#boracay{
+    background-color:#FFFFFF;
+    .img{
+      width: 60%;
+      float: right;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &#activities{
+    background-color:#F0F0F0;
+  }
+  &#wedding{
+    background-color:#FFFFFF;
+  }
+  &#faq{
+    background-color:#F0F0F0;
+  }
+}
+
+.thinner {
+  width: 75%;
+  margin: 0 auto;
+  @include clearfix;
+}
+.third{
+  width: 28%;
+  margin: 2%;
+  float: left;
+  &:nth-child(3n){
+    clear:both;
+  }
+}
