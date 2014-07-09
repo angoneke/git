@@ -1,0 +1,42 @@
+body {
+  margin: 0px;
+  font-family: Helvetica;
+  background-color: white;
+}
+
+.topbar {
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding: 3px;
+}
+
+.topdivider {
+  background-color: #AF1E2C;
+  height: 4px;
+}
+
+.bottomdivider {
+  background-color: #E6BE8A;
+  height: 8px;
+}
+
+.teamName {
+  color: white;
+  text-align: left;
+  padding-top: 250px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background: url('https://s3-us-west-1.amazonaws.com/hackweek/49ers_big.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-size: 3em;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+.teamDetails {
+  padding: 5px;
+  height: 200px;
+  background-color: black;
+  color: white;
+}
+

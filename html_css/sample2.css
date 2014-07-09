@@ -1,0 +1,36 @@
+ p {
+  background-color: #FF00FF;
+  border: 5px solid;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.highlighter {
+      background-color: yellow;
+    }
+    
+.second {
+      background-color: red;
+    }
+p:hover {
+  background-color: green;
+  border-top-color: red;
+}
+
+a {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+p:first-letter {
+  font-size: 60px;
+}
+
+h1 {
+  position: relative;
+  color: red;
+  top: 1in;
+  left: 1in;
+}
+
